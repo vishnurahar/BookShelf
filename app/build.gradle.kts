@@ -91,4 +91,10 @@ dependencies {
 
     implementation(libs.logging.interceptor)
 
+
+    implementation(libs.androidx.room.runtime)
+    annotationProcessor(libs.androidx.room.compiler)
+    kapt("androidx.room:room-compiler:2.6.1")
+    implementation(libs.androidx.room.ktx)
+
 }
